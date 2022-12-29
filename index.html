@@ -464,11 +464,119 @@
               </li>
             </ul>
           </div>
+          <div class="newsletter-block">
+            <form name="newsletter" autocomplete="off">
+              <label class="newsletter-label" for="newsletter"
+                >Zapisz się na newsletter</label
+              >
+              <div class="newsletter-box">
+                <input
+                  type="email"
+                  id="newsletter"
+                  name="email"
+                  placeholder="E-mail"
+                  class="newsletter-input hidden-input"
+                />
+                <button type="submit" class="newsletter-btn">
+                  <span>Zapisz się</span>
+                  <svg width="24" height="24">
+                    <use href="./images/icons.svg#icon-send"></use>
+                  </svg>
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
       </footer>
       <div class="backdrop is-hidden" data-modal>
         <div class="modal-box">
           <button class="modal-btn" data-modal-close>&times;</button>
+          <form>
+            <h4 class="modal-title">Zostaw swoje dane w formularzu poniżej</h4>
+            <div
+              class="modal-input-group"
+              role="group"
+              aria-labelledby="user-name"
+            >
+              <label for="user_name" class="full-input">Imie</label>
+
+              <input
+                class="modal-input-border"
+                type="text"
+                name="user_name"
+                id="user_name"
+              />
+              <svg width="18" height="18" class="modal-icon">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </div>
+            <div
+              class="modal-input-group"
+              role="group"
+              aria-labelledby="user-phone"
+            >
+              <label for="user_phone">Telefon</label>
+              <input
+                class="modal-input-border"
+                type="tel"
+                name="phone_number"
+                id="user_phone"
+              />
+              <svg width="18" height="18">
+                <use href="./images/icons.svg#icon-phone-black"></use>
+              </svg>
+            </div>
+
+            <div
+              class="modal-input-group"
+              role="group"
+              aria-labelledby="user-e-mail"
+            >
+              <label for="user_email">Email</label>
+              <input
+                class="modal-input-border"
+                type="email"
+                name="email"
+                id="user_email"
+              />
+              <svg width="18" height="18">
+                <use href="./images/icons.svg#icon-email-black"></use>
+              </svg>
+            </div>
+
+            <div
+              class="modal-input-group"
+              role="group"
+              aria-labelledby="feedback"
+            >
+              <label for="feedback">Komentarz</label>
+              <textarea
+                name="feedback"
+                id="feedback"
+                rows="5"
+                placeholder="Wprowadź tekst"
+                class="textarea-input modal-input-border"
+              ></textarea>
+            </div>
+
+            <div
+              class="modal-input-group-2"
+              role="group"
+              aria-labelledby="agreements"
+            >
+              <label class="custom-checkbox">
+                <input type="checkbox" name="agreements" value="agreements" />
+                <svg width="16" height="15">
+                  <use href="./images/icons.svg#icon-check"></use>
+                </svg>
+
+                <span>Oświadczam iż akceptuję </span><a href="#">Regulamin </a
+                ><span> i </span> <a href="#"> Politykę Prywatności.</a></label
+              >
+
+              <button class="button-modal" type="submit">Wyślij</button>
+            </div>
+          </form>
         </div>
       </div>
     </main>
